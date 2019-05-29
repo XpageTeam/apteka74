@@ -242,6 +242,10 @@
   cursor: pointer;
 }
 
+.new-order-make .order_page .radio__label span:after {
+  display: none !important;
+}
+
 .new-order-make .order_page .radio__label:before, .new-order-make .order_page .radio__label:after {
   content: "";
   position: absolute;
