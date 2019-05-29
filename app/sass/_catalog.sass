@@ -1,0 +1,162 @@
+.bl_catalog_one_container
+	.bl_cat_one_col
+		padding: 35px 45px
+
+		&_links
+			margin-left: 100px
+
+
+			li
+				color: #fff
+				margin: 0
+
+				a
+					border-color: transparent
+
+					&:hover 
+						border-color: currentColor
+
+				&:not(:first-child)
+					margin-top: 10px
+
+		&_image
+			width: auto
+
+			+ .bl_cat_one_col_links
+				margin-left: 185px
+
+	.bl_cat_one_row
+		display: flex
+		
+
+
+.bl_catalog_one_container
+	position: relative
+	display: flex
+	flex-wrap: wrap
+
+	&:after
+		content: ''
+		display: block
+		clear: both
+
+	.bl_cat_one_row[class*="_col_1"]
+		width: 40%
+		float: left
+
+		+ .bl_cat_one_row[class*="_col_2"]
+			width: 59%
+
+	.bl_cat_one_row[class*="_col_2"]
+		width: 100%
+		float: left
+
+	.bl_cat_one_row[class*="_col_3"]
+		width: 100%
+
+		ul
+			column-count: 3
+			column-gap: 50px
+
+		li 
+			break-inside: avoid
+	.white_col_2
+		ul
+			column-count: 2
+			column-gap: 30px
+
+		li 
+			break-inside: avoid
+
+
+
+	.bl_cat_one_row[class*="green_"]
+		background-color: #3aa090 !important
+
+		a
+			color: #fff !important
+
+	.bl_cat_one_row[class*="white_"]
+
+		a, li
+			color: #3aa090 !important
+
+	.bl_cat_one_row[class*="white_"]
+		// border-left: 1px solid #eee
+
+.green_col_2
+
+	ul
+		column-count: 2
+
+	li 
+		break-inside: avoid
+
+.bl_cat_one_col
+	width: auto
+
+
+.bl_cat_one_row + .bl_cat_one_row
+	margin-top: 0
+	padding: 0
+	background: none !important
+
+.bl_cat_one_col_header
+    font-size: rem(21)
+    font-weight: 400
+
+
+@media screen and (max-width: 1000px)
+	.bl_catalog_one_container 
+		.bl_cat_one_row
+			flex-direction: column
+
+			&:nth-child(even) 
+				.bl_cat_one_col:not(:first-child)
+					border-left: 0
+					border-top: 1px solid #E8E8EA
+
+		.cat_one_col_no_image
+			.bl_cat_one_col_links
+				margin-left: 0
+
+
+	.bl_catalog_one_container
+		> .bl_cat_one_row
+			width: 100% !important
+
+			&:nth-child(odd)
+				background-color: #3aa090 !important
+
+				a, li
+					color: #fff !important
+
+			&:nth-child(even)
+				background-color: #fff !important
+
+				&[class*="green_"]
+					a 
+						color: #3aa090 !important
+
+
+@media screen and (max-width: 480px)
+	
+	.bl_catalog_one_container 
+		.bl_cat_one_col_links
+			margin-left: 0 !important
+
+
+		.bl_cat_one_col
+			padding: 20px
+
+			+ .bl_cat_one_col 
+				margin-top: 0
+
+
+		.bl_cat_one_row 
+			ul
+				column-count: 1 !important
+
+
+
+

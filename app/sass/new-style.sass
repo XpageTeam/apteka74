@@ -1,0 +1,1458 @@
+
+$output-bourbon-deprecation-warnings: false
+@import "bourbon"
+@import "vars"
+
+// @import "base"
+@import "functions"
+
+
+.bl_one_product__slider
+	background: #F5F6F7
+	padding: 25px 40px
+	margin-top: 30px
+
+	.item_product
+		padding: 20px
+
+		&_image
+			height: auto
+
+			a
+				height: auto
+
+	.slick
+		&-list
+			margin: 0 -15px
+
+		&-slide
+			margin: 0 15px
+
+	&-title
+		font-size: rem(18)
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 25px
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&-arrow
+		position: relative
+
+		.slick
+			&-prev
+				position: relative
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+
+			&-next
+				position: relative
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				margin-left: 33px
+
+
+
+.fancybox-inner
+	overflow: visible !important
+
+.forms
+	background: #fff
+
+.inner_page div.title-search-result
+	z-index: 999 !important
+.bx-ie
+	.slick-track
+		.item_product_price
+			width: 100%
+			max-width: 100%
+
+		.item_product
+			display: block
+
+	.item_product_image
+		a
+			display: inline
+
+
+
+.product_count input
+	height: 26px
+
+.bl_one_article table td
+	border: 0
+
+.products_btn_more
+	padding: 75px 0
+
+.basket-header
+	display: flex
+	align-items: center
+	padding-top: 15px
+
+	&__soc
+		margin-right: auto
+		display: flex
+
+		> span
+			font-size: rem(14)
+			color: #aaaaa8
+			margin-right: 20px
+
+	&__email, &__pdf, &__print
+		margin-left: rem(90)
+		padding: 5px 0 5px 35px
+
+		a
+			font-size: 16px
+
+	&__email
+		background: url('../img/basket-email.png') no-repeat center left 0
+
+	&__pdf
+		background: url('../img/basket-pdf.png') no-repeat center left 0
+
+	&__print
+		background: url('../img/basket-print.png') no-repeat center left 0
+
+
+
+.more-search
+	text-align: center
+	padding: 1.4rem
+
+.catalog_l_item
+
+	.item_product
+		display: inline-block
+
+		&_center
+			display: flex
+			flex-wrap: wrap
+
+		&_name, &_txt, &_predzakaz
+			width: 100%
+
+		&_txt
+			+ .item_label_recept
+				margin: 10px 0 0 0
+
+	.item_label_recept
+		position: relative
+		width: auto
+		height: auto
+		box-shadow: none
+		padding-left: 45px
+		background: none
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: -6px
+			+size(30px)
+			border-radius: 50%
+			background: url('../img/label-recept.png')no-repeat center, #cd1c1c
+
+		div
+			position: relative
+			transform: none
+			z-index: 1
+			top: 0 !important
+			left: initial !important
+			padding: 0
+			box-shadow: none
+			right: 0 !important
+			text-align: left
+
+
+.bl_lk_fourth_step
+	.item_product_predzakaz
+		margin-top: 10px
+
+
+.m_popular_products_slide_one
+	.item_product_predzakaz:before
+		top: 0
+
+
+.section-list
+	.item_product_predzakaz
+		margin-top: 10px
+
+
+.catalog_cont_products
+	.catalog_c_item
+		display: flex
+		flex-direction: column
+
+	.item_product_predzakaz:before
+		top: 0
+
+.search-page
+
+	.catalog_c_item
+		flex: none
+
+
+.item_product
+	display: flex
+	flex-direction: column
+	flex: 1 1 auto
+
+	&_txt
+		margin: auto 0
+
+
+//start стили для корзины
+//не удалять
+
+.new-order-make
+	.order_page
+		.radio__input
+			opacity: 0
+			position: absolute
+			top: 0
+			left: 0
+			pointer-events: none
+			display: block !important
+
+
+		.radio__input:checked + label:after
+			opacity: 1
+
+
+		.radio__label
+			padding-left: 50px
+			min-height: 15px
+			position: relative
+			display: block
+			cursor: pointer
+
+
+		.radio__label:before, .radio__label:after
+			content: ""
+			position: absolute
+			display: block
+			border-radius: 50%
+
+
+		.radio__label:before
+			border: 1px solid #e4e8ea
+			height: 15px
+			width: 15px
+			left: 0
+			top: 0
+
+
+		.radio__label:after
+			top: 7px
+			left: 5px
+			background: #239387
+			height: 7px
+			width: 7px
+			transition: opacity .3s ease
+			opacity: 0
+
+
+		.bl_one_product_avail_cont_inner
+			.radio input[type="radio"]:checked + label span:after
+				display: none
+
+
+		.bl_apt_row
+			position: relative
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			border: 0
+
+
+
+
+		.bl_one_product_avail_cont .btn
+			width: 170px
+			text-align: center
+			margin-left: auto
+			z-index: 10
+
+
+		.bl_apt_row > div
+			padding: 0
+			top: initial
+			background: transparent
+
+
+		.radio__label:before
+			top: 2px
+
+		.radio__label span
+			background: #fff
+
+		.radio
+			position: relative
+			max-width: 360px
+			width: 100% !important
+
+
+		.bl_apt_item_tel
+			position: relative
+			color: #000
+			max-width: 265px
+			width: 100%
+
+		.bl_apt_item_tel span
+			background: #fff
+
+
+		.bl_apt_row__top:before
+			content: ""
+			height: 1px
+			width: calc(100% - 45px)
+			position: absolute
+			left: 45px
+			bottom: 14px
+			background: #e4e8ea
+
+
+
+		.bl_apt_item_status
+			position: relative
+
+		.bl_apt_item_status span
+			background: #fff
+			white-space: nowrap
+
+
+		.bl_apt_row__top
+			display: flex !important
+			align-items: center
+			width: 100%
+
+
+		.cart-table
+			width: 100%
+			border-collapse: collapse
+
+		.cart-table thead
+			background: #f5f6f7
+
+
+
+		.cart-table th
+			padding: 18px 10px
+			font-size: 14px
+			font-weight: bold
+
+
+
+		.cart-table td
+			padding: 20px 10px
+
+
+		.cart-table td[colspan="2"] .cart-item
+			display: flex
+			align-items: center
+
+
+		.cart-table tbody tr:not(:first-child)
+			border-top: 1px solid #eee
+
+
+		.cart-table .cart-quant
+			background: transparent
+			font-size: 20px
+
+
+
+		.cart-table .cart-price
+			font-size: 20px
+
+
+		.cart-table .cart-price span
+			font-size: 15px
+			color: #acacac
+
+
+		.cart-table .cart-total
+			font-size: 20px
+
+		.cart-table .cart-total span
+			font-size: 15px
+			color: #acacac
+
+
+		.bl_apt_row.info-open
+			border: 4px solid #f5f6f7
+			padding: 25px 45px 45px 22px
+
+
+
+		.bl_apt_row__info
+			margin-top: 35px
+			display: none !important
+
+		.cart-table
+			.cart-title
+				font-weight: bold
+				font-size: 14px
+				color: #239387
+
+			.cart-subtitle
+				color: #bebebe
+				font-size: 14px
+
+			th
+				&:nth-child(1)
+					width: 40%
+
+			td
+				&:nth-child(1)
+					padding-right: 5%
+
+
+			th
+				&:not(:first-child)
+					text-align: left
+
+			td
+				&:last-child
+					text-align: center
+
+
+			th
+				&:nth-child(3)
+					text-align: center
+
+
+			td
+				&:nth-child(3)
+					text-align: center
+
+
+
+			.cart-info
+				font-size: 16px
+				cursor: initial
+
+
+			.cart-info.empty
+				color: red
+
+
+			.left
+				width: 90px
+				text-align: center
+				margin-right: 20px
+
+
+			.cart-title
+				margin-bottom: 13px
+
+
+		.basket-delivery__top
+			display: flex
+			margin-bottom: 20px
+			width: 100%
+
+
+		.basket-delivery
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			margin-top: 25px
+
+
+		.basket-delivery .checkbox:not(:first-child)
+			margin-left: 60px
+
+
+		.basket-delivery .form_row select
+			height: 53px
+			min-width: 317px
+			padding: 0 40px 0 20px
+			font-size: 14px
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAQAAADoz+32AAAAKklEQVQIHQXBMQEAIAwDsJhgAw2Y5uCrItyQcDVgOZQoTDGgxRYDoD0FH7Y7BdeMLHL8AAAAAElFTkSuQmCC) no-repeat right 10px center
+			-webkit-appearance: none
+
+
+
+		.basket-delivery .form_row select:ms-expand
+			display: none
+
+
+		.bl_apt_row.info-open .bl_apt_row__top .btn
+			background: #fff
+			border: 2px solid #239387
+			color: #239387
+
+
+		.bl_apt_row.info-open .bl_apt_row__info
+			display: block !important
+			max-width: 100%
+
+
+
+		.basket-delivery__city, .bl_basket_s_zakaz_bottom_col
+			display: none
+
+
+		.basket-delivery__top .radio label
+		    white-space: nowrap
+
+
+		.basket-delivery__top .radio + .radio
+			margin: 0 0 0 60px
+
+		.basket-delivery__top
+			display: flex
+			flex-wrap: wrap
+
+
+		.basket-delivery__item
+
+
+		.select-city.selected ~ .basket-delivery__city
+			display: block
+
+		.select-delivery.selected ~ .bl_basket_s_zakaz_bottom_col
+			display: block
+
+		.bl_basket_s_zakaz_bottom_col
+			margin-top: 45px
+
+
+		.item_product-label
+			background: #3aa090
+			color: #fff
+			padding: 5px 10px
+			position: absolute
+			top: -10px
+			left: -10px
+
+		.m_popular_products_cont_item .slick-slide
+			display: flex
+			flex-direction: column
+			flex: 1 1 auto
+
+		.m_popular_products_cont_item .item_product
+			display: flex
+			flex-direction: column
+			flex: 1 1 auto
+
+		.bl_basket_s_zakaz_select_shop + .bonus-my
+			margin-top: 110px
+
+			.bonus-my__text
+				border: 1px solid #ebebe8
+				flex: none
+				align-self: center
+				padding: 40px 55px
+
+		.bonus-my + .bl_basket_s_zakaz_bottom
+			.bl_basket_s_zakaz_bottom_col
+				display: flex !important
+				align-items: flex-start
+
+				p
+					margin-top: 0
+
+		.item_product_price
+			margin: auto 0 28px 0
+
+
+
+		.bl_apt_row .radio label::after
+			content: ''
+
+		.bl_apt_item_time
+			display: none
+
+		.radio__label span
+			width: auto !important
+			background: #fff !important
+			height: auto
+			border-radius: 0
+
+		.cart-table
+			td
+				vertical-align: middle
+
+		.bl_apt_row+.bl_apt_row
+			margin-top: 35px
+
+
+
+		.bl_apt_row
+			display: flex
+			flex-direction: column
+			padding: 0
+			margin-right: 22px
+
+		.bl_one_product_avail_cont
+			height: auto
+			overflow: initial
+
+		.form_row
+			input[type="tel"]
+				display: block
+				width: 100%
+				height: 40px
+				border: 1px solid #e7e7e7
+				border-radius: 10px
+				padding: 0 8px
+				outline: none
+				box-sizing: border-box
+				-moz-box-sizing: border-box
+
+
+
+
+
+
+
+
+//end
+
+.item_product_predzakaz
+	position: relative
+	padding-left: 45px
+	text-align: left
+	color: #b5b5b5
+	font-size: 14px
+	margin-bottom: 15px
+
+	+ .item_label_recept
+		margin-left: 0
+
+
+
+.item_product_predzakaz:before
+	content: ''
+	display: block
+	position: absolute
+	left: 0
+	top: -6px
+	width: 31px
+	height: 31px
+	border-radius: 50%
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAABN0lEQVQYGQXBTWsPAADA4d+/LQc5+QRKbQd5p3ahUA7Le3lL7QMouTjIxUG+gJPchHYiKW0tk2mltlpeyk3U0k6KGNF4PE+SJIdN+uSHVcseOWYgSUkyag6vXHfWGdfM+WfRTklJ9vtpwZgkSXZ47o9xKckpt62T5KKrkgzcsWa7kgs2SpI8Ni9J8sJbw9mHXZIkk2YkSUZxIne9MZAkmTQjSZJZU/ngpiRJJk1LkuSylXw1IUmShxYkSTJuNd9MSJLkvN/uWy9Jxq3moxuSJMkhXywZkeSSlTywJEmSZJPXFg0kM2ZyALslSZJssE2yGaeTeUuGJEmSJHnmveFkxC/3DEmSJMkt7FWSg1a9tEeSJFs8teaklCRbLWDWFUcdcdmUv94Zk5QkGTjuiWXf/fDZtHOGJek/7TSUgNHjFLEAAAAASUVORK5CYII=) no-repeat center, #3aa090
+
+
+
+
+
+
+.f-age
+	position: relative
+
+	max-width: 300px
+	padding-left: 55px
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAzFBMVEU6oJD///86oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJA6oJDUw8jnAAAAQ3RSTlMAAAIGBwsPEBESFBUWFx4fIi8wMzY3P0JERkpOT1BVWVpgZnB3foiKi46QlJiZqaqwtLu+wMLMztPb5Oju8Pb6/P3+ZAOi2AAAAaxJREFUOMuFlGt3mkAQhl+8VGqrjZtevDUm1mrqJdCt0goops///0/9ABwOwdD5sOfw8pzZmdmZkQprTdaH6MLf6Ef6/XH9WXIcpyD6mxOZPabKA99KTHuVQLidmV7n3eDDVcYcYT9qqGRlZnwmnJb+f/J9/zd/fN//kjLjBNst+/iax8aDI0nmzFOzjOiNMeY7j8aYt46k9hH7EnkZz4qwq3qmnzDVf5gNe0mSO/dAku488O4kNTutlGmdGEmSLICkOQQBzDNnjuNoQpiWbuEtQXJhIS3ALZg12/z+IWSHBMOCOTArMS64+SlJg18/FWFKjCw7191hM3FApAu9MuMGAHHmRu95FnTKd1liG0CQQR2o+PHYudIwxkvFHpdKPFlCNk1PMkSVvILcT5CKMw6V+tzGYAOIb1Nxy7qoc57XzTKAYHmTao2QSfFe123EqVW8+3Xbs6ntH0lTkn5tH0rdkJVT289qWo5t59W5kKTmE2eTz+CV+ZLUtSTjujmVpiHncd28N0Z7OBpd2xv3ptfpmfttCMmqLb2+f4DTpl/0c3WPXaLDetJSMTv/AMulVccoVwANAAAAAElFTkSuQmCC) no-repeat left 0 top 0
+	color: #3aa090
+	text-align: left
+	font-size: 14px
+	margin-left: auto
+	margin-bottom: 45px
+
+
+.f_menu
+    margin-bottom: 40px
+
+
+.bonus
+	max-width: 870px
+
+	&-title
+		font-size: 25px
+		text-transform: uppercase
+		font-weight: bold
+		margin-bottom: 35px
+		margin-top: 48px
+		line-height: 1.5
+
+	&-my
+
+		&__info
+			display: flex
+
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			flex: 1 1 auto
+
+			> *
+				&:not(:first-child)
+					margin-top: 25px
+
+			.form_row
+				width: 100%
+
+				p
+					margin-top: 0
+
+
+		&__point, &__sale
+			font-size: 23px
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 0
+
+			span
+				color: #3aa090
+				font-size: 35px
+
+
+	&-input
+		height: 40px
+		width: 270px
+		background: transparent
+		border: 0
+		color: #fff
+		outline: none
+		font-size: 20px
+		font-weight: 300
+		font-family: 'Open Sans'
+		letter-spacing: .05em
+		border-bottom: 1px solid rgba(#d1e1b8, .85)
+
+
+		&::-webkit-input-placeholder
+			color: #fff
+			opacity: 1
+
+		&:-moz-placeholder
+			color: #fff
+			opacity: 1
+
+		&::-moz-placeholder
+			color: #fff
+			opacity: 1
+
+		&:-ms-input-placeholder
+			color: #fff
+			opacity: 1
+
+
+	&-card
+		background: #3aa090
+		color: #fff
+		border-radius: 17px
+		padding: 42px 53px 55px
+		box-shadow: 0px 3px 19.2px 4.8px rgba(0, 0, 0, 0.07)
+		margin-right: 125px
+
+		&__num
+			margin-top: 33px
+
+
+	&-target
+		margin-top: 50px
+
+
+
+		&__list
+			display: flex
+			flex-wrap: wrap
+			margin: 0 0 -30px -30px
+
+		&__item
+			width: calc((100% - 30px * 2) / 2)
+			margin: 0 0 30px 30px
+			border: 2px solid #3aa090
+			font-family: 'Open Sans'
+			color: #3aa090
+			box-sizing: border-box
+			padding: 45px 50px
+			display: flex
+			flex-direction: column
+
+			.btn
+				margin: auto 0 0
+				align-self: flex-start
+
+			&.accrued
+				background: #3aa090
+				color: #fff
+
+			&.moderation
+				background: #f6f6f6
+				color: #bebebe
+				border: 0
+
+
+	&__item
+		&-title
+			font-size: 24px
+			font-weight: bold
+			margin-bottom: 55px
+			line-height: 1.3
+
+		&-point
+			font-size: 28px
+			font-weight: bold
+			margin-bottom: 20px
+
+			span
+				font-size: 35px
+				font-weight: bold
+		
+		&-actions
+			margin-bottom: 20px
+
+
+
+.faq
+	margin-top: 70px
+
+	&-title
+		font-size: 25px
+		text-transform: uppercase
+		font-weight: bold
+		margin-bottom: 30px
+
+	&__item
+		border: 1px solid #ebebe8
+
+		&:not(:first-child)
+			margin-top: 10px
+
+		&.js__open
+			border: 0
+
+			.faq__item
+
+				&-title
+					background: #3aa090
+					color: #fff
+
+					&:after
+						border:
+							right: 1px solid #fff
+							bottom: 1px solid #fff
+						transform: rotate(225deg)
+				&-info
+					display: block
+
+
+
+		&-title
+			position: relative
+
+			font-size: 14px
+			font-weight: bold
+			font-family: 'Open Sans'
+			padding: 22px 43px
+
+			&:after
+				content: ''
+				position: absolute
+				right: 40px
+				top: calc(50% - 4px)
+				width: 8px
+				height: 8px
+				border:
+					right: 1px solid #000
+					bottom: 1px solid #000
+				transform: rotate(45deg)
+				transition: transform .3s ease
+
+
+
+		&-info
+			display: none
+			padding: 10px 0 18px
+
+
+
+.popup
+	&-identified
+		width: 625px !important
+		text-align: center !important
+		padding: 50px 55px !important
+		font-family: 'Open Sans'
+
+	&-text
+		font-size: 14px
+
+	&-tel
+		font-size: 30px
+		font-weight: bold
+		color: #3aa090
+		margin-top: 15px
+		display: inline-block
+
+	&-bonus
+		padding: 70px !important
+		max-width: 980px !important
+		width: 100%
+
+		.bonus-card
+			margin-right: 75px
+
+
+.form-col
+	display: flex
+	width: 100%
+
+	.form_row
+		max-width: 257px
+
+	> a
+		font-size: 13px
+		margin-top: auto
+		margin-left: 20px
+
+
+
+
+
+.sale
+	margin: 60px 0 68px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 0 -30px -30px
+
+	&__item
+		width: calc((100% - 30px * 2) / 2)
+		margin: 0 0 30px 30px
+		background: #3aa090
+		color: #fff
+		font-family: 'Open Sans'
+		font-size: 20px
+		font-weight: bold
+		text-decoration: none
+		padding: 38px 130px 46px 75px
+		box-sizing: border-box
+		background-repeat: no-repeat
+		background-position: right 75px center
+
+
+div.title-search-result
+	z-index: 10	!important
+
+.m_popular_products
+	.slick-list
+		margin: 0 -10px
+
+.m_bl_banner_item_small
+	display: none
+
+
+.slider-top
+	.m_popular_products_cont_item
+		overflow: visible
+
+
+div[id^="tab-"]:not(#tab-sale)
+	width: 1220px
+
+	.m_popular_products_carousel_one
+		margin: 0 25px
+
+
+.m_bl_search
+	width: 100%
+	margin: 0
+	box-sizing: border-box
+	max-width: 100%
+
+.search-top
+	display: flex
+	align-items: flex-start
+	margin-bottom: 74px
+
+.catalog-btn
+	position: relative
+	white-space: nowrap
+	background: #3aa090
+	margin-right: 20px
+
+	a
+		color: #fff
+		display: block
+		padding: 43px 54px
+		cursor: pointer
+		position: relative
+		z-index: 10
+
+
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 5px
+		top: 5px
+		right: 5px
+		bottom: 5px
+		border: 2px solid #fff4c3
+		border-radius: 3px
+		z-index: 1
+
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 10px
+		top: 10px
+		right: 10px
+		bottom: 10px
+		border: 1px solid #fff4c3
+		border-radius: 3px
+		z-index: 1
+
+
+//траничка поделиться корзиной
+.bl_basket_header_c
+	font-size: 30px
+	font-weight: 100
+	margin: 0 0 17px 0
+
+.bl_basket_subtitle
+	font-size: 20px
+	padding: 10px 0
+	margin-bottom: 20px
+
+.basket_product
+	display: flex
+	align-items: center
+	padding: 24px 0
+	border-top: 1px solid #818181
+
+.product_row_left
+	float: left
+	max-width: 360px
+	position: relative
+
+.product_row_image
+	display: inline-block
+	vertical-align: top
+	width: 123px
+	text-align: center
+
+.product_row_name
+	width: auto
+	float: none
+	display: block
+
+	a
+		font-size: rem(20)
+
+.product_row_right
+	display: flex
+	margin-left: auto
+	align-items: center
+
+	i
+		font-style: normal
+
+.product_row_price
+	font-size: rem(20)
+
+.bl_p_count
+	input
+		width: 30px
+		border: 0
+		font-size: rem(20)
+		text-align: center
+
+
+.product_row_b_count
+	margin: 0 20px
+
+.bl_calc_total_left
+	text-align: right
+	font-size: rem(25)
+	padding: 20px 15px
+	background: #eaeaea
+	margin-bottom: 30px
+	display: flex
+	justify-content: flex-end
+
+	i
+		font-style: normal
+
+
+.calc_total_counts
+	margin-left: 10px
+
+
+@media print
+
+	.inner_p_menu,
+	.header_menu-forms,
+	.bl_navigation,
+	.h_bl_btns,
+	.h_bl_search,
+	.basket-header, footer, #jivo-iframe-container,
+	.bl_basket_bottom_inf_right, .item_product_status,
+	.bl_basket_col_delete, .bl_basket_first_step_head,
+	.product_count_minus,
+	.product_count_plus, .bl_basket_bottom_inf_att_red:before, jdiv,
+	.bl_basket_first_step_footer .btn, .bl_basket_first_step_footer:before,
+	.big-notif
+		display: none !important
+		opacity: 0 !important
+	header
+		position: relative
+
+	.header_top_line
+
+		.top-resp-soc, .h_bl
+			display: none
+
+		.h_bl.h_tel
+			position: absolute
+			right: 0
+			top: 50px
+			display: block
+
+
+
+	.bl_basket_bottom_inf_att
+		padding: 0
+
+		&_ico
+			position: static
+			left: 0
+			top: 0
+			height: auto
+			background: none
+			line-height: 1
+			padding-left: 0
+			display: block
+
+
+		&_red
+			padding-left: 0
+
+	.header_menu
+		border: 0
+
+
+	.inner_page #content
+		padding-top: 60px
+
+	#basket_items_list
+		padding: 0
+
+	.bl_basket_bottom_inf_left
+		margin-right: 0
+		display: flex
+		flex-direction: column
+
+	.bl_basket_bottom_inf
+		margin-top: 0
+
+	.bl_f_total_price
+		margin: 0
+
+	.bl_basket_col_name
+		width: 65%
+		margin-right: auto
+
+
+	.center
+		max-width: 980px
+
+	.bl_basket_product_items
+		margin-bottom: 20px
+
+	.bl_basket_product_item
+		display: flex
+		align-items: center
+
+	.bl_basket_col_count .product_count
+		border: 0
+		margin: 0 20px
+
+	.bl_basket_col
+		width: auto
+
+	.price_actual
+		white-space: nowrap
+
+	.bl_basket_product_item .bl_basket_col_cost
+		width: auto
+
+
+
+
+@media screen and (min-width: 1200px)
+
+	.main.new-year
+
+		.page_wr
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				+size(248px 271px)
+				background: url('../img/bol-left.png') no-repeat center top
+				background-size: contain !important
+				pointer-events: none
+				z-index: 9999
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				right: 0
+				+size(253px 422px)
+				background: url('../img/bol-right.png') no-repeat center top
+				background-size: contain !important
+				pointer-events: none
+				z-index: 9999
+
+		.m_bl_bottom_bls
+			position: relative
+
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: -105px
+				+size(242px 366px)
+				background: url('../img/bol-bot-leftt.png') no-repeat center top
+				background-size: contain !important
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: 85px
+				bottom: -120px
+				+size(184px 174px)
+				background: url('../img/lenta-7.png') no-repeat center top
+				background-size: contain !important
+				z-index: 2
+				pointer-events: none
+
+		.m_bl_articles
+			position: relative
+
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 138px
+				top: -95px
+				+size(158px 137px)
+				background: url('../img/lenta-5.png') no-repeat center top
+				background-size: contain !important
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: 0
+				top: 100%
+				+size(211px 317px)
+				background: url('../img/lenta-6.png') no-repeat center top
+				background-size: contain !important
+				z-index: 2
+				pointer-events: none
+
+		.banner-top__cont
+			position: relative
+
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 138px
+				top: 150px
+				+size(138px 190px)
+				background: url('../img/lenta-1.png') no-repeat center top
+				background-size: contain !important
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: 0
+				top: calc(100% - 30px)
+				+size(230px 298px)
+				background: url('../img/lenta-2.png') no-repeat center top
+				background-size: contain !important
+				z-index: 2
+				pointer-events: none
+
+		.m_bl_banners + .m_popular_products
+			position: relative
+
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				+size(210px 317px)
+				background: url('../img/lenta-3.png') no-repeat center top
+				background-size: contain !important
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: 50px
+				top: calc(100% - 277px)
+				+size(177px 180px)
+				background: url('../img/lenta-4.png') no-repeat center top
+				background-size: contain !important
+				z-index: 2
+				pointer-events: none
+
+.bl_one_product_descr_cont, .bl_one_product_descr_cont_1
+
+	> *:not(:last-child)
+		margin-bottom: 18px
+
+
+	h2, h3, h4, h5, h6, strong
+		//font-weight: bold
+		margin-bottom: 15px !important
+
+	h2
+		font-size: rem(24)
+		line-height: rem(32)
+
+	h3
+		font-size: rem(24)
+		line-height: rem(30)
+
+
+	h4
+		font-size: rem(22)
+		line-height: rem(28)
+
+	h5
+		font-size: rem(20)
+		line-height: rem(28)
+
+	img[align="right"]
+		float: right
+		margin-left: 20px
+
+	img[align="left"]
+		float: left
+		margin-right: 20px
+
+	blockquote
+		border-left: 2px solid $main-color
+		padding-left: 21px
+
+
+	table
+		width: 100%
+		table-layout: fixed
+		color: #000
+
+		td
+			padding: 15px 23px
+			font-weight: 300
+			vertical-align: middle
+		th
+			padding: 37px 23px
+			font-weight: 300
+			vertical-align: middle
+
+	table[border="1"]
+
+		td, th
+			border: 1px solid $border-color
+
+	ul, ol
+		max-width: 650px
+		margin-top: 20px !important
+
+	li
+		//padding-left: 20px
+		position: relative
+
+		&:before
+			display: inline-block
+
+		&:not(:first-child)
+			//margin-top: 21px
+
+		ul, ol
+			margin-top: 0 !important
+			margin-bottom: 20px
+
+		li
+			padding-left: 20px
+
+			&:not(:first-child)
+				margin-top: 0
+
+	ul
+		margin-bottom: 30px
+
+		li
+
+			&:before
+				content: ""
+				background: #000
+				width: 12px
+				height: 1px
+				vertical-align: middle
+				margin: 0 14px 4px 0
+
+		ul
+
+			li
+				//padding-left: 20px
+
+				&:before
+					content: "-"
+					+size(auto)
+					background: none
+					margin: 0 5px 5px 0
+
+	ol
+		counter-reset: i
+
+		li
+			counter-increment: i
+
+			&:before
+				content: counter(i) "."
+				margin-right: 4px
+	dt, dd
+		display: inline
+		font-style: italic
+
+	blockquote
+		position: relative
+		display: inline-block
+		padding: 4px 0 7px 17px
+
+
+
+.bl_basket_bottom_inf_att a
+	color: #ff0000
+
+
+
+
+
+
+@import "_catalog.sass"
+
+
+@import "media"

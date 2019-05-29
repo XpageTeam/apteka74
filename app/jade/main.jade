@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Промышленные технологии
+		include inc/head.jade
+		include inc/css.jade
+	body.main
+		#page-wr
+			.mobile-menu
+			#content
+				include inc/header.jade
+				.main-slider__cont
+					nav.main-slider__nav
+						.wrapper
+							ul.slider-nav__list
+								li.slider-nav__item
+									a(href="#").slider-nav__link.active Поворотные платформы, сцены, фотозоны
+								li.slider-nav__item
+									a(href="#").slider-nav__link Мобильный авто подиум
+								li.slider-nav__item
+									a(href="#").slider-nav__link Вращающиеся крышные сцены
+								li.slider-nav__item
+									a(href="#").slider-nav__link Вращающиеся крышные конструкции
+								li.slider-nav__item
+									a(href="#").slider-nav__link Вращающиеся стелы
+					.slider-nav_wrap
+						.main-slider-arrow
+						.slider-nav
+							.slider-nav__title Мобильный<br> авто подиум
+					.main-slider
+		
+						- for (var i = 0; i < 5; i++)
+							.main-slider__slide
+								img.main-slider__slide-img(src="img/photos/new-main-slider-img-"+(i+1)+".jpg", alt="")
+
+				.about
+					.wrapper 
+						.about-cont 
+							.about__text
+								//- .about-title.title Динамический подиум
+								.text-page 
+									p Подиум – элитная продукция, которая выделяет автомобиль в экспозиции. Нужно показать, что мы делаем не только конструкцию, но и различное ее оформление. Для напольных подиумов мы предлагаем различные варианты оформления бортов – нержавеющая сталь, алюминиевая композитная панель, металл, короба с внутренней засветкой. Для всех видов подиумов огромный выбор напольного покрытия: металл, нержавейка, стекло, инженерная доска, паркет, сценические бесшовные покрытия. В этом году мы продали 4 конструкции, в прошлом 2 конструкции, в 16 году одну. Рынок расширяется, доля по этому направлению у нас большая.
+								.about-title.title Мы специализируемся<br> на разработке и производстве<br> динамических конструкций
+								.text-page 
+									p Каждая третья динамическая конструкция в России – нашего производства. Размеры готовых изделий, которые мы производим для наших клиентов, варьируются от 1 до 13 метров.
+									p Динамическое оборудование нашего производства представлено в 13 городах России, в Казахстане, Молдове, Германии, офисы продаж работают в Москве, Екатеринбурге, Крыму. 
+									p Сердце «Промышленных технологий» – мощный конструкторский отдел. Суммарный опыт наших специалистов в конструировании – свыше 70 лет, минимальный опыт работы самого молодого проектировщика – 7 лет. 
+									p Испытав сотни вариантов, мы разработали идеальный механизм вращения, надежный, бесшумный, способный удовлетворить самого взыскательного заказчика. 
+									p Ежегодно мы вводим в производство новый продукт, постоянно стремясь к совершенству конструкции.
+							.about-gallery
+								.about-gallery__list
+									//- a(href="img/photos/intro-1.png" data-fancybox="gallery").about-gallery__item.fancybox
+									//- 	img(src="img/photos/intro-1.png")
+
+									a(href="img/photos/about-1.jpg" data-fancybox="gallery").about-gallery__item.fancybox
+										img(src="img/photos/about-1.jpg")
+									a(href="img/photos/about-2.jpg" data-fancybox="gallery").about-gallery__item.fancybox
+										img(src="img/photos/about-2.jpg")
+
+
+				//- .about
+					.wrapper 
+						.about-cont 
+							.about__text
+								.about-title.title Мы специализируемся<br> на разработке и производстве<br> динамических конструкций
+								.text-page 
+									p Каждая третья динамическая конструкция в России – нашего производства. Размеры готовых изделий, которые мы производим для наших клиентов, варьируются от 1 до 13 метров.
+									p Динамическое оборудование нашего производства представлено в 13 городах России, в Казахстане, Молдове, Германии, офисы продаж работают в Москве, Екатеринбурге, Крыму. 
+									p Сердце «Промышленных технологий» – мощный конструкторский отдел. Суммарный опыт наших специалистов в конструировании – свыше 70 лет, минимальный опыт работы самого молодого проектировщика – 7 лет. 
+									p Испытав сотни вариантов, мы разработали идеальный механизм вращения, надежный, бесшумный, способный удовлетворить самого взыскательного заказчика. 
+									p Ежегодно мы вводим в производство новый продукт, постоянно стремясь к совершенству конструкции.
+							.about-gallery
+								.about-gallery__list
+									a(href="img/photos/about-1.jpg" data-fancybox="gallery").about-gallery__item.fancybox
+										img(src="img/photos/about-1.jpg")
+									a(href="img/photos/about-2.jpg" data-fancybox="gallery").about-gallery__item.fancybox
+										img(src="img/photos/about-2.jpg")
+
+
+				.advantages
+					.wrapper
+						.advantages-cont
+							.advantages-title.title Почему<br> именно мы?
+								.advantages-arrow
+					.advantages-slider
+						.wrapper
+							.advantages-slider__list
+								.advantages-slider__item
+									figure.advantages-slider__img
+										img(src="img/photos/advantages-1.png" alt="")
+									.advantages-slider__text Большое количество технических решений и богатый опыт их эксплуатации позволяют снижать риски и производить максимально безупречные контрукции
+								.advantages-slider__item
+									figure.advantages-slider__img
+										img(src="img/photos/advantages-2.png" alt="")
+									.advantages-slider__text Сильный конструкторский отдел. Наши конструкторы активно участвуют в процессе продаж, благодаря чему клиент получает максимум полезной информации на этапе принятия решения
+								.advantages-slider__item
+									figure.advantages-slider__img
+										img(src="img/photos/advantages-3.png" alt="")
+									.advantages-slider__text Простота эксплуатации, удобство обслуживания и наличие гарантийных обязательств
+								.advantages-slider__item
+									figure.advantages-slider__img
+										img(src="img/photos/advantages-1.png" alt="")
+									.advantages-slider__text Простота эксплуатации, удобство обслуживания и наличие гарантийных обязательств
+				.projects
+					.slider-full
+						a(href="img/photos/new-advantages-1.png" data-fancybox="gallery").slider-full__item.fancybox
+							figure
+								img(src="img/photos/new-advantages-1.png")
+						a(href="img/photos/new-advantages-2.png" data-fancybox="gallery").slider-full__item.fancybox
+							figure
+								img(src="img/photos/new-advantages-2.png")
+						a(href="img/photos/new-advantages-3.png" data-fancybox="gallery").slider-full__item.fancybox
+							figure
+								img(src="img/photos/new-advantages-3.png")
+						a(href="img/photos/new-advantages-1.png" data-fancybox="gallery").slider-full__item.fancybox
+							figure
+								img(src="img/photos/new-advantages-1.png")
+					.projects-cont
+						.wrapper
+							.projects__title Наши<br> работы
+							.slider-full-arrow
+
+				.testemonials
+					.wrapper
+						.testemonials-cont
+							.testemonials-title.title Отзывы
+							.testemonials__slider
+								.testemonials__list
+									.testemonials__item
+										.top
+											.testemonials__name Тебенева<br> Ирина Алексеевна
+										.bot 
+											.testemonials__company Маркетолог ТРЦ<br> "Гринвич" www.grinvich.com<br> г. Екатеринбург
+											.testemonials-text В 2013 году заказывали у компании «Промышленные технологии» подиумы под автомобиль и мотоцикл. Привлекает внимание посетителей к автомобилям в экспозиции. Оборудование отработало 5 лет без нареканий. Рекомендую!
+									.testemonials__item
+										.top
+											.testemonials__name Тебенева<br> Ирина Алексеевна
+										.bot 
+											.testemonials__company Маркетолог ТРЦ<br> "Гринвич" www.grinvich.com<br> г. Екатеринбург
+											.testemonials-text В 2013 году заказывали у компании «Промышленные технологии» подиумы под автомобиль и мотоцикл. Привлекает внимание посетителей к автомобилям в экспозиции. Оборудование отработало 5 лет без нареканий. Рекомендую!
+								.testemonials-arrow
+
+				.map 
+					img(src="img/photos/map.jpg" alt="")
+					.map-info-cont
+						.wrapper
+							.map-info
+								.left
+									.map-info__title Связаться<br> с нами
+
+								.right
+									.top
+										a(href="tel:88002007764") 8 800 200 77 64
+										.address 
+											span г. Екатеринбург,  ул. Контролеров 13
+									.bot
+										a(href="#").fancybox.btn Заказать звонок
+
+				.links
+					.wrapper 
+						ul.links__list
+							li.links__item Поворотные платформы,<br> сцены, фотозоны
+							li.links__item Мобильный<br> авто подиум
+							li.links__item Вращающиеся<br> крышные конструкции
+							li.links__item Вращающиеся<br> стелы
+							li.links__item Производственная 
+								br
+								| Компания
+
+			include inc/footer.jade
+		include inc/scripts.jade

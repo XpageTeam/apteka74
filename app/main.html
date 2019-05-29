@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Аптека</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,700italic,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/new-style.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]> 
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+<!--     <script>
+    
+        jQuery(document).ready(function($) {
+            
+            $('.fancybox').fancybox({
+            
+            helpers : {
+              title : {
+                type : 'inside'
+              }
+            }
+          });
+    
+        });
+    </script> -->
+  </head>
+  <body class="">
+    <div id="main">
+      <div class="bl_popup">
+        <div class="bl_popup_basket">
+          <div class="bl_popup_basket_cont">
+            <div class="popup_basket_product clearfix">
+              <div class="item_product_image">
+                <a href="#">
+                  <img src="img/pic_09.png" alt="">
+                </a>
+              </div>
+              
+              <div class="item_product_center_two">
+                <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                <div class="p_basket_product_count">x <span>1 шт.</span></div>
+                <a href="#" class="p_basket_product_delete"></a>
+              </div>
+              <div class="item_product_center">
+                <span class="p_bsket_product_status"><img src="img/ico_time.png" alt=""></span>
+                <div class="item_product_name">
+                  <a href="#">Катадолон1</a>
+                </div>
+                <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+              </div>
+            </div>
+            <div class="popup_basket_product clearfix">
+              <div class="item_product_image">
+                <a href="#">
+                  <img src="img/pic_09.png" alt="">
+                </a>
+                <div class="item_label">
+                  <div class="item_label_recept">
+                    <div>Для покупки этого товара вам потребуется рецепт</div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="item_product_center_two">
+                <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                <div class="p_basket_product_count">x <span>1 шт.</span></div>
+                <a href="#" class="p_basket_product_delete"></a>
+              </div>
+              <div class="item_product_center">
+                <div class="item_product_name">
+                  <a href="#">Катадолон2</a>
+                </div>
+                <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+              </div>
+            </div>
+            <div class="popup_basket_product clearfix">
+              <div class="item_product_image">
+                <a href="#">
+                  <img src="img/pic_09.png" alt="">
+                </a>
+              </div>
+              <div class="item_product_center_two">
+                <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                <div class="p_basket_product_count">x <span>1 шт.</span></div>
+                <a href="#" class="p_basket_product_delete"></a>
+              </div>
+              <div class="item_product_center">
+                <div class="item_product_name">
+                  <a href="#">Катадолон3</a>
+                </div>
+                <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+              </div>
+            </div>
+          </div>
+          <div class="bl_popup_basket_foot clearfix">
+            <div class="bl_popup_basket_f_left"><a href="#">Перейти в корзину</a></div>
+            <div class="bl_popup_basket_f_right">Общая сумма: 
+              <div class="price_h_total">1500<span>.00 <i class="rub">&#8381;</i></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="header_top_line">
+          <div class="center">
+            <div class="h_bl h_tel">
+              <span>8-800</span>-200-74-03
+            </div>
+            <div class="h_bl h_feedback">
+              <a href="#">Заказать звонок</a>
+            </div>
+            <div class="h_bl h_city">
+              Челябинск
+            </div>
+            <div class="h_bl h_addr">
+              Адреса аптек
+            </div>
+            <div class="h_bl h_lk">
+              <a href="#">Личный кабинет</a>
+            </div>
+          </div>
+        </div>
+        <div class="header_menu">
+          <div class="center">
+            <a href="#" class="logo">
+              <img src="img/logo.png" alt="">
+            </a>
+            <nav class="main_menu">
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Оформление заказа</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="h_bl_btns">
+              <a href="#" class="h_link_basket"><img src="img/ico_basket.png" alt=""></a>
+              <a href="#" class="h_link_favourite"><img src="img/ico_favourite.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content">
+        <div class="main_grey_wrap">
+          <div class="m_bl_search clearfix">
+            <div class="m_bl_search_one_text">Исправляет <br>ошибки</div>
+            <div class="m_bl_search_two_text">Подбирает <br>по симптому</div>
+            <div class="m_bl_search_three_text">Подбирает <br>по категории</div>
+            <div class="m_bl_search_cont">
+              <input type="submit" value="Поиск">
+              <div class="bl_search_pole">
+                <input type="text" placeholder="Поиск по товарам">
+              </div>
+            </div>
+          </div>
+          <div class="m_two_bls">
+            <div class="clearfix">
+              <div class="m_two_bl_item m_two_bl_item_catalog">
+                <div class="m_two_bl_item_cont">
+                  <div class="m_two_bl_item_link">
+                    <a href="#">Каталог товаров</a>
+                  </div>
+                  <p>В нашем каталоге <br>представлен самый <br>большой в городе <br>ассортимент медицинских <br>товаров и лекарств</p>
+                </div>
+              </div>
+              <div class="m_two_bl_item m_two_bl_item_load">
+                <div class="m_two_bl_item_cont">
+                  <div class="m_two_bl_item_link">
+                    <a href="#">Загрузите рецепт</a>
+                  </div>
+                  <p>Если у Вас есть <br>готовый рецепт, <br>загрузите его нам <br>и мы соберем <br>Вам покупки</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="m_popular_products">
+            <div class="m_popular_products_head">
+              <div class="m_popular_products_head_header">Товар дня</div>
+              <div class="m_popular_products_head_cats">
+                <span class="active">Боли и спазмы</span>
+                <span>При простуде и гриппе</span>
+                <span>При авитоминозе</span>
+                <a href="#">Полный каталог</a>
+              </div>
+            </div>
+
+            <div class="m_popular_products_container">
+              <div class="m_popular_products_cont_item active">
+                <div class="m_popular_products_carousel_one">
+                  <div class="m_popular_products_slide_one">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                        <div class="item_label">
+                          <div class="item_label_recept">
+                            <div>Для покупки этого товара вам потребуется рецепт</div>
+                          </div>
+                        </div>
+                        <div class="item_product-label">Товар дня</div>
+                      </div>
+                      <div class="item_product_predzakaz">Товар доступен под заказ. Срок доставки 1-2 рабочих дня</div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+
+                      </div>
+                      <div class="item_product_txt">
+                        <span class="item_product_manufacturer">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</span></div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span>
+                        <div class="cart-quantity">1 шт.</div></div>
+                      </div>
+                      <div class="item_product_btns"> <a href="javascript:void(0);" class="link_to_favourite link_to_favorite_catalog" data-item-favorite-id="259294" tabindex="-1"></a> <form method="post" class="product_add_to_cart_form product_add_to_cart_form--259294"><a href="javascript:void(0);" class="link_to_basket" data-button-addtobasket="true" tabindex="-1"></a><div class="product_count"><input type="hidden" name="PRODUCT_ID" value="259294" tabindex="-1"><span class="product_count_minus"></span><input type="text" value="1" name="QUANTITY" readonly="" max="1" tabindex="-1"><span class="product_count_plus"></span></div></form> </div>
+
+                    </div>
+                  </div>
+
+                  <div class="m_popular_products_slide_one">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                        <div class="item_label">
+                          <div class="item_label_recept">
+                            <div>Для покупки этого товара вам потребуется рецепт</div>
+                          </div>
+                        </div>
+                        <div class="item_product-label">Товар дня</div>
+                      </div>
+                      <div class="item_product_predzakaz">Товар доступен под заказ. Срок доставки 1-2 рабочих дня</div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_popular_products_slide_one">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                        <div class="item_label">
+                          <div class="item_label_recept">
+                            <div>Для покупки этого товара вам потребуется рецепт</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item_product_predzakaz">Товар доступен под заказ. Срок доставки 1-2 рабочих дня</div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_popular_products_slide_one">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_popular_products_slide_one">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_btn_more">
+                  <a href="#">Показать еще</a>
+                </div>
+              </div>
+              <div class="m_popular_products_cont_item"></div>
+              <div class="m_popular_products_cont_item"></div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="m_bl_banners">
+          <div class="center clearfix">
+            <div class="m_bl_banner_item_small">
+              <div class="m_bl_banner_item_small_carousel">
+                <div class="m_bl_banner_item_small_slide">
+                  <a href="#">
+                    <img src="img/pic_07.png" alt="">
+                  </a>
+                </div>
+                <div class="m_bl_banner_item_small_slide">
+                  <a href="#">
+                    <img src="img/pic_06.png" alt="">
+                  </a>
+                </div>
+                <div class="m_bl_banner_item_small_slide">
+                  <a href="#">
+                    <img src="img/pic_07.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="m_bl_banner_item_small">
+              <a href="#">
+                <img src="img/pic_05.png" alt="">
+              </a>
+            </div>
+            <div class="m_bl_banner_item_small">
+              <a href="#">
+                <img src="img/pic_06.png" alt="">
+              </a>
+            </div>
+            <div class="m_bl_banner_item_big">
+              <div class="m_bl_banner_item_big_carousel">
+                <div class="m_bl_banner_item_big_slide">
+                  <a href="#">
+                    <img src="img/pic_08.png" alt="">
+                  </a>
+                </div>
+                <div class="m_bl_banner_item_big_slide">
+                  <a href="#">
+                    <img src="img/pic_08.png" alt="">
+                  </a>
+                </div>
+                <div class="m_bl_banner_item_big_slide">
+                  <a href="#">
+                    <img src="img/pic_08.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m_bl_products_sales_new center">
+          <div class="">
+            <div class="m_bl_products_sales_new_header">
+              <div class="m_bl_products_sales_new_header_links">
+                <a href="#"  class="active">Все скидки</a>
+                <a href="#">Все новинки</a>
+              </div>
+              <span  class="s_btn_sale active">Скидки</span>
+              <span class="s_btn_new">Новинки</span>
+            </div>
+            <div class="m_bl_products_sales_new_cont">
+              <div class="m_bl_products_sales_new_cont_sale active">
+                <div class="m_bl_products_sales_new_cont_sale_carousel">
+                  <div class="m_bl_products_sales_new_cont_sale_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_sale_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_sale_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_sale_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_sale_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m_bl_products_sales_new_cont_new">
+                <div class="m_bl_products_sales_new_cont_new_carousel">
+                  <div class="m_bl_products_sales_new_cont_new_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон 2</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_new_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон 2</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_new_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон 2</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_new_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m_bl_products_sales_new_cont_new_slide">
+                    <div class="item_product">
+                      <div class="item_product_image">
+                        <a href="#">
+                          <img src="img/pic_09.png" alt="">
+                        </a>
+                      </div>
+                      <div class="item_product_name">
+                        <a href="#">Катадолон</a>
+                      </div>
+                      <div class="item_product_txt">Катадолон капс 100мг уп конт яч пач N10x5 Тева Оперейшнс ПОЛ</div>
+                      <div class="item_product_price">
+                        <div class="price_actual">1295<span>.10 <i class="rub">&#8381;</i></span></div>
+                      </div>
+                      <div class="item_product_btns">
+                        <a href="#" class="link_to_favourite"></a>
+                        <a href="#" class="link_to_basket"></a>
+                        <div class="product_count">
+                          <span class="product_count_minus"></span>
+                          <input type="text" value="1">
+                          <span class="product_count_plus"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m_bl_articles">
+          <div class="center">
+            <div class="m_bl_articles_header">
+              <a href="#" class="link_header">Все статьи</a>
+              <span>Статьи</span>
+            </div>
+            <div class="m_bl_articles_cont">
+              <div class="m_bl_article_item">
+                <div class="m_bl_article_item_cont">
+                  <div class="m_bl_article_item_date">22.07.2016</div>
+                  <div class="m_bl_article_item_name">
+                    <a href="#">«Нездоровый загар» или как спасти ребенка от солнечных лучей</a>
+                  </div>
+                  <div class="m_bl_article_item_text">
+                    Польза и вред воздействия ультрафиолетового излучения на кожу человека во время загара вызывает массу...
+                  </div>
+                </div>
+              </div>
+              <div class="m_bl_article_item">
+                <div class="m_bl_article_item_cont">
+                  <div class="m_bl_article_item_date">22.07.2016</div>
+                  <div class="m_bl_article_item_name">
+                    <a href="#">Спокойная жизнь без комаров</a>
+                  </div>
+                  <div class="m_bl_article_item_text">
+                    Как бороться с кусающими насекомыми и быстро избавиться от последствий укусов
+                  </div>
+                </div>
+              </div>
+              <div class="m_bl_article_item">
+                <div class="m_bl_article_item_cont">
+                  <div class="m_bl_article_item_date">22.07.2016</div>
+                  <div class="m_bl_article_item_name">
+                    <a href="#">Гипогликемия: профилактика и лечение</a>
+                  </div>
+                  <div class="m_bl_article_item_text">
+                    Давайте разбираться: нужно ли экономить на лекарствах в процессе лечения?
+                  </div>
+                </div>
+              </div>
+              <div class="m_bl_article_item">
+                <div class="m_bl_article_item_cont">
+                  <div class="m_bl_article_item_date">22.07.2016</div>
+                  <div class="m_bl_article_item_name">
+                    <a href="#">Правильный путь к красоте и стройности</a>
+                  </div>
+                  <div class="m_bl_article_item_text">
+                    Как восстановить форму после праздников и стать стройным в новом году
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m_bl_bottom_bls">
+          <div class="center clearfix">
+            <a href="#" class="m_bl_bottom_bl_item">
+              <span class="m_bl_bottom_bl_item_image">
+                <img src="img/pic_24.png" alt="">
+              </span>
+              <span class="m_bl_bottom_bl_item_tb">
+                <span class="m_bl_bottom_bl_item_td">
+                  Лошадиная сила - <br>выбор звезд!
+                </span>
+              </span>
+            </a>
+            <a href="#" class="m_bl_bottom_bl_item">
+              <span class="m_bl_bottom_bl_item_image">
+                <img src="img/pic_02.png" alt="">
+              </span>
+              <span class="m_bl_bottom_bl_item_tb">
+                <span class="m_bl_bottom_bl_item_td">
+                  Лечебная косметика
+                </span>
+              </span>
+            </a>
+            <a href="#" class="m_bl_bottom_bl_item">
+              <span class="m_bl_bottom_bl_item_image">
+                <img src="img/pic_03.png" alt="">
+              </span>
+              <span class="m_bl_bottom_bl_item_tb">
+                <span class="m_bl_bottom_bl_item_td">
+                  Порадуй себя и свою кожу
+                </span>
+              </span>
+            </a>
+            <a href="#" class="m_bl_bottom_bl_item">
+              <span class="m_bl_bottom_bl_item_image">
+                <img src="img/pic_04.png" alt="">
+              </span>
+              <span class="m_bl_bottom_bl_item_tb">
+                <span class="m_bl_bottom_bl_item_td">
+                  Электрическая роликовая пилка Scholl 
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="center clearfix">
+          <div class="f_left_col">
+            <div>© 2000-2018<br>АО «Областной аптечный склад», <br> все права защищены. <br> <span style="font-size: 8pt;">Информация представлена на сайте для ознакомления и не является публичной офертой.</span> <br><br><a href="#popup_error_form" class="fancybox">Нашли ошибку?</a> <div class="privacy_policy">Политика конфиденциальности <br><a target="_blank" href="/usloviya-vozvrata-i-obmena/">Условия возврата и обмена</a></div> </div>
+            
+           <!--  <p>&copy; 2000-2016 <br>
+              АО «Областной аптечный склад», <br>все права защищены
+            </p> -->
+           <!--  <div class="f_social_links">
+              <a href="#" class="ico_vk"><img src="img/ico_vk.png" alt=""></a>
+              <a href="#" class="ico_facebook"><img src="img/ico_facebook.png" alt=""></a>
+              <a href="#" class="ico_inst"><img src="img/ico_inst.png" alt=""></a>
+            </div> -->
+          </div>
+          <div class="f_right_col">
+            <div class="f_menu">
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Оформление заказа</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="f-age">ряд страниц сайта содержит контент, мпредназначенный для лиц старше 18 лет</div>
+            <a href="#" class="logo_dev">Сделано в <img src="img/logo_dev.png" alt=""></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
