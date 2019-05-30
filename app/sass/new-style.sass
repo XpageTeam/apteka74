@@ -6,7 +6,143 @@ $output-bourbon-deprecation-warnings: false
 // @import "base"
 @import "functions"
 
+.text-page
 
+	max-width: 1030px
+	line-height: 1.5
+
+	> *:not(:last-child)
+		margin-bottom: 28px
+
+
+	h2, h3, h4, h5, h6, strong
+		//font-weight: bold
+		margin-bottom: 15px !important
+
+	h2
+		font-size: rem(24)
+		line-height: rem(32)
+
+	h3
+		font-size: rem(24)
+		line-height: rem(30)
+
+
+	h4
+		font-size: rem(22)
+		line-height: rem(28)
+	
+	h5
+		font-size: rem(20)
+		line-height: rem(28)
+
+	img[align="right"]
+		float: right
+		margin-left: 20px
+
+	img[align="left"]
+		float: left
+		margin-right: 20px
+
+	blockquote
+		border-left: 2px solid $main-color
+		padding-left: 21px
+
+
+	table
+		width: 100%
+		table-layout: fixed
+		color: #000
+
+		td
+			padding: 15px 23px
+			font-weight: 300
+			vertical-align: middle
+		th
+			padding: 37px 23px
+			font-weight: 300
+			vertical-align: middle
+
+	table[border="1"]
+
+		td, th
+			border: 1px solid $border-color
+
+	ul, ol
+		max-width: 650px
+		margin-top: 20px !important
+
+	li
+		//padding-left: 20px
+		position: relative
+		list-style-type: none
+
+		&:before
+			display: inline-block
+
+		&:not(:first-child)
+			//margin-top: 21px
+
+		ul, ol
+			margin-top: 0 !important
+			margin-bottom: 20px
+
+		li
+			padding-left: 20px
+
+			&:not(:first-child)
+				margin-top: 0
+
+	ul
+		margin-bottom: 30px
+
+
+		li
+
+			&:before
+				content: ""
+				background: #000
+				width: 12px
+				height: 1px
+				vertical-align: middle
+				margin: 0 14px 4px 0
+
+		ul
+
+			li
+				//padding-left: 20px
+
+				&:before
+					content: "-"
+					+size(auto)
+					background: none
+					margin: 0 5px 5px 0
+	
+	ol
+		counter-reset: i
+
+		li
+			counter-increment: i
+
+			&:before
+				content: counter(i) "."
+				margin-right: 4px
+	dt, dd 
+		display: inline
+		font-style: italic
+
+	blockquote
+		position: relative
+		display: inline-block
+		padding: 4px 0 7px 17px
+
+	.btn 
+		display: inline-block
+		margin-top: 35px
+
+.bl_lk_cont
+	margin-bottom: 20px
+	
 .bl_one_product__slider
 	background: #F5F6F7
 	padding: 25px 40px

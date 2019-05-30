@@ -1,4 +1,155 @@
 @charset "UTF-8";
+.text-page {
+  max-width: 1030px;
+  line-height: 1.5;
+}
+
+.text-page > *:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.text-page h2, .text-page h3, .text-page h4, .text-page h5, .text-page h6, .text-page strong {
+  margin-bottom: 15px !important;
+}
+
+.text-page h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-page h3 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.text-page h4 {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.text-page h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-page img[align="right"] {
+  float: right;
+  margin-left: 20px;
+}
+
+.text-page img[align="left"] {
+  float: left;
+  margin-right: 20px;
+}
+
+.text-page blockquote {
+  border-left: 2px solid #1e57fa;
+  padding-left: 21px;
+}
+
+.text-page table {
+  width: 100%;
+  table-layout: fixed;
+  color: #000;
+}
+
+.text-page table td {
+  padding: 15px 23px;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.text-page table th {
+  padding: 37px 23px;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.text-page table[border="1"] td, .text-page table[border="1"] th {
+  border: 1px solid #e4e8ea;
+}
+
+.text-page ul, .text-page ol {
+  max-width: 650px;
+  margin-top: 20px !important;
+}
+
+.text-page li {
+  position: relative;
+  list-style-type: none;
+}
+
+.text-page li:before {
+  display: inline-block;
+}
+
+.text-page li ul, .text-page li ol {
+  margin-top: 0 !important;
+  margin-bottom: 20px;
+}
+
+.text-page li li {
+  padding-left: 20px;
+}
+
+.text-page li li:not(:first-child) {
+  margin-top: 0;
+}
+
+.text-page ul {
+  margin-bottom: 30px;
+}
+
+.text-page ul li:before {
+  content: "";
+  background: #000;
+  width: 12px;
+  height: 1px;
+  vertical-align: middle;
+  margin: 0 14px 4px 0;
+}
+
+.text-page ul ul li:before {
+  content: "-";
+  height: auto;
+  width: auto;
+  background: none;
+  margin: 0 5px 5px 0;
+}
+
+.text-page ol {
+  counter-reset: i;
+}
+
+.text-page ol li {
+  counter-increment: i;
+}
+
+.text-page ol li:before {
+  content: counter(i) ".";
+  margin-right: 4px;
+}
+
+.text-page dt, .text-page dd {
+  display: inline;
+  font-style: italic;
+}
+
+.text-page blockquote {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0 7px 17px;
+}
+
+.text-page .btn {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.bl_lk_cont {
+  margin-bottom: 20px;
+}
+
 .bl_one_product__slider {
   background: #F5F6F7;
   padding: 25px 40px;
