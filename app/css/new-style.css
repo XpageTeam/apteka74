@@ -268,6 +268,7 @@
 
 .basket-header__email a, .basket-header__pdf a, .basket-header__print a {
   font-size: 16px;
+  background: transparent;
 }
 
 .basket-header__email {
@@ -2246,6 +2247,23 @@ div[id^="tab-"]:not(#tab-sale) .m_popular_products_carousel_one {
 }
 
 @media screen and (max-width: 660px) {
+  .new-order-make .order_page .cart-table td:nth-last-child(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .new-order-make .order_page .cart-table td:last-child {
+    padding-top: 0;
+  }
+  .f_left_col {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .f-age {
+    opacity: 1 !important;
+    margin-bottom: 20px;
+  }
   .fancybox-inner, .fancybox-skin, .fancybox-wrap {
     width: 100% !important;
     left: 0 !important;
