@@ -1,4 +1,28 @@
 @charset "UTF-8";
+.promocode .label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.promocode .label span {
+  margin-right: 20px;
+}
+
+#js-coupon-value {
+  height: 36px;
+  padding: 0 20px;
+}
+
+#js-coupon-apply {
+  height: 40px;
+  background-color: #239387;
+  border: 0;
+  margin-left: 15px;
+  color: #fff;
+  padding: 0 15px;
+}
+
 .new-order-make #content {
   overflow-x: hidden;
 }
@@ -2091,6 +2115,12 @@ div[id^="tab-"]:not(#tab-sale) .m_popular_products_carousel_one {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .bl_basket_bottom_inf_att_ico {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .new-order-make .order_page .bl_apt_row > div {
     width: 100% !important;
@@ -2521,6 +2551,16 @@ div[id^="tab-"]:not(#tab-sale) .m_popular_products_carousel_one {
 }
 
 @media screen and (max-width: 370px) {
+  .promocode * {
+    box-sizing: border-box;
+  }
+  #js-coupon-value {
+    width: 100%;
+  }
+  #js-coupon-apply {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
   .item_product_center_two {
     right: 1.4em;
   }
