@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.new-order-make #content {
+  overflow-x: hidden;
+}
+
+.order-info__subtitle {
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+}
+
 .text-page {
   max-width: 1030px;
   line-height: 1.5;
