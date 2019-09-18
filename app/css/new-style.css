@@ -2287,6 +2287,12 @@ div[id^="tab-"]:not(#tab-sale) .m_popular_products_carousel_one {
 }
 
 @media screen and (max-width: 660px) {
+  .bl_one_product_avail_cont .radio__label {
+    padding-left: 20px !important;
+  }
+  .bl_apt_item_status {
+    padding-left: 25px !important;
+  }
   .new-order-make .order_page .cart-table td:nth-last-child(2) {
     width: 100%;
     display: flex;
